@@ -4,11 +4,11 @@ const languagesData = {
 	    hero: {
 		  greeting: "Hi! 👋",
 		  intro: " I'm a full stack developer. I can craft solid and scalable full stack products. Let's meet! You can click on my picture for my CV!",
-		  profileImg: "/assets/images/p.jpg",
+		  profileImg: "/prince-porfolio/assets/images/ki.jpg",
 		  profileName: "I'm Prince Carval",
-		  linkedInSVG: "/assets/images/linkedIn.svg",
+		  linkedInSVG: "/prince-porfolio/assets/images/linkedIn.svg",
 		  linkedInLink: "https://www.linkedin.com/in/prince-carval-a2719826a/",
-		  githubSVG: "/assets/images/github.svg", 
+		  githubSVG: "/prince-porfolio/assets/images/github.svg", 
 		  githubLink: "https://github.com/Princecarval2003",
 		  heroFooter: "Currently looking for internship opportunities. lets connect.",
 		  heroFooter2: "Invite me to join your team -> ",
@@ -19,39 +19,39 @@ const languagesData = {
 		  images: [
 			{
 			    Alt: "JAVASCRIPT",
-			    SRC: "/assets/images/javascript.png",
+			    SRC: "/prince-porfolio/assets/images/jj.png",
 			},
 			{
 			    Alt: "HTML",
-			    SRC: "/assets/images/html.png",
+			    SRC: "/prince-porfolio/assets/images/hh.png",
 			},{
 				Alt: "CSS",
-				SRC: "/assets/images/css.png",
+				SRC: "/prince-porfolio/assets/images/cc.png",
 			  },
 			
 			{
 			    Alt: "REACT",
-			    SRC: "/assets/images/react.png",
+			    SRC: "/prince-porfolio/assets/images/rr.png",
 			},
 			{
 			    Alt: "NODE",
-			    SRC: "/assets/images/node.png",
+			    SRC: "/prince-porfolio/assets/images/nn.png",
 			},
 			{
 			    Alt: "VS CODE",
-			    SRC: "/assets/images/vscode.png",
+			    SRC: "/prince-porfolio/assets/images/vv.png",
 			},
 			{
 			    Alt: "TAILWIND",
-			    SRC: "/assets/images/tailwindcss.png",
+			    SRC: "/prince-porfolio/assets/images/tt.png",
 			},
 			{
 			    Alt: "MongoDB",
-			    SRC: "/assets/images/mongo.png",
+			    SRC: "/prince-porfolio/assets/images/mm.png",
 			},
 			{
 			    Alt: "Java",
-			    SRC: "/assets/images/OIP.jpg",
+			    SRC: "/prince-porfolio/assets/images/aa.png",
 			},
 		  ]
 	    },
@@ -84,7 +84,7 @@ const languagesData = {
 			    materials: [ "React", "Nextjs","MongoDB","Express"],
 			    viewText: "View on Github ->",
 			    viewLink: "https://github.com/Princecarval2003/chat-app-fullstack",
-			    imgLink: "assets/images/chat.png",
+			    imgLink: "/prince-porfolio/assets/images/chat.png",
 			},
 		 
 			{
@@ -92,7 +92,7 @@ const languagesData = {
 			    h1: "Landslide Prediction Using Machine Learning",
 			    text: "Application that offers historical landslide data, awareness videos, and emergency contact information. Utilized advanced deep learning algorithms to deliver real-time predictions, enhancing community preparedness and response to landslide hazards.",
 			    materials: ["Python", "Scikit-learn","TensorFlow","Android-kotlin"],
-			    imgLink: "assets/images/slide.png",
+			    imgLink: "/prince-porfolio/assets/images/slide.png",
 			},	{
 				id:"movieselector",
 				h1: "College Portal",
@@ -100,7 +100,7 @@ const languagesData = {
 				materials: ["HTML","CSS","JavaScript","PHP","MYSQL"],
 				viewText: "View on Github ->",
 				viewLink: "https://github.com/Princecarval2003/college-portal",
-				imgLink: "assets/images/portal.png",
+				imgLink: "/prince-porfolio/assets/images/portal.png",
 			  },	
 		  ],
 	    },

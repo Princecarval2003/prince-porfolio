@@ -2,8 +2,8 @@ import { useLanguage } from "../context/LanguageContext";
 
 function Skills() {
     const { translate } = useLanguage();
-    const skills = translate("skills");
-    const images = skills.images;
+    const skills = translate("skills") || {};
+    const images = skills.images || [];
 
     return (
         <>
@@ -11,7 +11,7 @@ function Skills() {
                 <div className="w-32 h-32 border-[16px] border-solid border-[#D9D9D9] rounded-full place-self-end mr-[25vw] -mt-16"></div>
                 
                 <div className="px-[18vw]">
-                    <h1 className="my-10 font-medium text-5xl leading-tight tracking-normal">{skills.h1}</h1>
+                    <h1 className="my-10 font-medium text-5xl leading-tight tracking-normal">{skills.h1 || ''}</h1>
                     
                     <div className="flex flex-row justify-evenly flex-wrap">
                         {

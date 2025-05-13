@@ -1,6 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 import languagesData from '../data';
-import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const LanguageContext = createContext();
@@ -11,22 +10,12 @@ export const LanguageProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchTranslations = async () => {
-      try {
-        const response = await axios.post('https://reqres.in/api/workintech', languagesData[language]);
-        setTranslations(response.data);
-        if (!loading) {
-          toast.success("Language changed.");
-        }
-      } catch (error) {
-        console.error('Error fetching translations:', error);
-        toast.error(error);
-      } finally {
-        setLoading(false);
-        toast.success("Page loaded!");
-      }
-    };
-    fetchTranslations();
+    setTranslations(languagesData[language]);
+    if (!loading) {
+      toast.success("Language changed.");
+    }
+    setLoading(false);
+    toast.success("Page loaded!");
   }, [language]);
 
   if (loading) {

@@ -2,12 +2,12 @@ import { useLanguage } from "../context/LanguageContext";
 
 function Projects() {
     const { translate } = useLanguage();
-    const projects = translate("projects");
+    const projects = translate("projects") || { myProjects: [] };
 
     return (
         <>
             <article className="px-[18vw] py-24 min-h-80 content-center bg-[#FFFFFF] text-center dark:bg-[#484148] dark:text-[#F4F4F4]">
-                <h1 className="my-10 font-medium text-5xl leading-tight tracking-normal">{projects.h1}</h1>
+                <h1 className="my-10 font-medium text-5xl leading-tight tracking-normal">{projects.h1 || ''}</h1>
                 <div className="flex flex-row justify-evenly text-left flex-wrap lg:flex-nowrap mt-10">
                     {
                         projects.myProjects.map(project => (
